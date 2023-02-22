@@ -15,6 +15,9 @@
           <a href="micropython"><button class="button">Microphython (&micro;Py)</button></a>
          
         </div>
+        <div class="button-container">
+          <a href="modules/index.php"><button class="button">MIXING MODULES</button></a>
+        </div>
       </body>
     </html>
        
