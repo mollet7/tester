@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -54,8 +58,10 @@
         </style>
 </head>
 <body>
+    <p><a href="logout.php">Logout:</a></p>
 <div class="button-container">
           <a href="modal.php"><button class="button">Modal</button></a>
+          <a href="php-login.php"><button class="button">php login box</button></a>
           
          
         </div>

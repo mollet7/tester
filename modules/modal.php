@@ -45,7 +45,7 @@
     <button id="btn1">Open Modal</button>
     <div id="modal" class="modal">
         <div class="modal-contents">
-            <span id="spn1" class="close">&times;</span>
+            <span id="spn1" class="close">&times;</span>                       
             <p>Here are contents inside the modal....</p>
         </div>
     </div>

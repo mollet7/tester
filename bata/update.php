@@ -84,7 +84,7 @@ if(isset($_POST["id"]) && !empty($_POST["id"])){
     // Close connection
     mysqli_close($link);
 } else{
-    // Check existence of id parameter before processing further
+    // Check existence of id parameter before processing further AND DESPLAY DATA TO FORM
     if(isset($_GET["id"]) && !empty(trim($_GET["id"]))){
         // Get URL parameter
         $id =  trim($_GET["id"]);

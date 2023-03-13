@@ -67,7 +67,7 @@ require_once "script/checkuserlogin.php";
                     if($result = mysqli_query($link, $sql)){
                         if(mysqli_num_rows($result) > 0){ ?>
                            <table class="table table-bordered table-striped">
-                                <thead>
+                                <thead class="table-dark">
                                     <tr>
                                         <th>#</th>
                                         <th>Name</th>

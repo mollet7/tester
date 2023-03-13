@@ -13,6 +13,7 @@
           <a href="sx/index.php"><button class="button">Syntax Generator (SX)</button></a>
           <a href="javascript/"><button class="button">JavaScript (JS)</button></a>
           <a href="micropython"><button class="button">Microphython (&micro;Py)</button></a>
+          <a href="php"><button class="button">PHP scripting</button></a>
          
         </div>
         <div class="button-container">
