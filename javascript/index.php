@@ -69,6 +69,7 @@
           <a href="gauges.html"><button class="button">Gauges</button></a>
           <a href="xmlhttpRequest/index.php"><button class="button">xmlhttpReqeuest</button></a>
           <a href="object.html"><button class="button">JS OBJECT</button></a>
+          <a href="function.php"><button class="button">Javascript Func</button></a>
         </div>
       </body>
     </html>
