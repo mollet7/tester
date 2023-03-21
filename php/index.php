@@ -14,6 +14,7 @@
           <a href="global-variable.php"><button class="button">GLOBAL VARIABLE</button></a>
           <a href="session.php"><button class="button">PHP SESSION</button></a>
           <a href="cookies.php"><button class="button">PHP COOKIES</button></a>
+          <a href="mixing.php"><button class="button">PHP sniplets</button></a>
         </div>
       </body>
     </html>
