@@ -62,9 +62,10 @@ session_start();
 <div class="button-container">
           <a href="modal.php"><button class="button">Modal</button></a>
           <a href="php-login.php"><button class="button">php login box</button></a>
-          <a href="customer-feedback-form2.php"><button class="button">Customer feedback</button></a>
-          
-         
-        </div>
+          <a href="customer-feedback-form.php"><button class="button">Customer feedback</button></a>
+          <a href="asy_js/index.php"><button class="button">Asynchronous JS</button></a>
+          <a href="websocket/index.php"><button class="button"><b>WebSocket</b></button></a>
+   
+</div>
 </body>
 </html>
