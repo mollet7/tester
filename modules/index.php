@@ -65,6 +65,7 @@ session_start();
           <a href="customer-feedback-form.php"><button class="button">Customer feedback</button></a>
           <a href="asy_js/index.php"><button class="button">Asynchronous JS</button></a>
           <a href="websocket/index.php"><button class="button"><b>WebSocket</b></button></a>
+          <a href="sse/index.php"><button class="button"><b>Server sent Event</b></button></a>
    
 </div>
 </body>

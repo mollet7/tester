@@ -126,7 +126,7 @@ Either a single protocol string or an array of protocol strings. These strings a
 <script>
   // creating contractor object and open the connection.
 const exampleSocket = new WebSocket(
-  "wss://www.example.com"
+  'ws:localhost/tester/modules/websocket','echo-protocol','request.origin'
 );
 // sending data to server.
 exampleSocket.onopen = (event) => {
