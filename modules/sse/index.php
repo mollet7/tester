@@ -194,8 +194,9 @@ The reconnection time. If the connection to the server is lost, the browser will
 
 <p>All other field names are ignored.</p>
 <span class="note">If a line doesn't contain a colon, the entire line is treated as the field name with an empty value string.</span>
-
-
+<h1>
+<a href="sse-example1.php" target="_blank">Example One</a> | <a href="sse-example2.php" target="_blank">Example two</a> | <a href="sse-example3.php" target="_blank">Example three</a>
+</h1>
 
 
 
