@@ -12,36 +12,30 @@
 <p class="fun" id="result"></p>
 <p id="error"></p>
 
-
-
-
 <script>
     const source = new EventSource('server.php');
+    let counter = 0;
     source.onmessage = function(event){
-        for (const event_properties in event){
+        /* for (const event_properties in event){
             console.log(event_properties);
             document.getElementById('error').innerHTML += event_properties + "<br>";
-        }
+        } */
         result = document.getElementById('result');
         result.innerHTML += event.data + "<br>"; 
-       
-
-
+        counter +=1;
+        if (counter > 9){
+            console.log(counter);
+            source.close();
+        }
     };
     
-
-
-    for(const property in source){
+    /* for(const property in source){
         console.log(property);
          const para = document.createElement('p');
         para.textContent += property;
         document.body.appendChild(para);
         
-    }
-
-   
-    
-    
+    } */   
 </script>
 
 </body>

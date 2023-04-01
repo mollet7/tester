@@ -10,6 +10,8 @@ header('Cache-Control: no-cache'); // recommended to prevent caching of event da
 **/
 
 $time = date('r');
+echo "id: 0001.\n";
+echo "name: Muda.\n";
 echo "data: The server time is: .$time .\n\n";
 flush();
 ?>

@@ -13,21 +13,25 @@
 
 <script>
     if (!!window.EventSource) {
-    var source = new EventSource('stream.php');
-    } else {
-    // Result to xhr polling :(
-        source.addEventListener('message', function(e){
-            console.log(e.data);
-        }, false);
+        console.log("Not supported!");
+        var source = new EventSource('stream.php');
+            // Result to xhr polling :(
+            source.addEventListener('message', function(e){
+                console.log(e.data);
+            }, false);
 
-        source.addEventListener('open',function(e){
-            console.log('Connection was opened');
-        }, false);
+            source.addEventListener('open',function(e){
+                console.log('Connection was opened');
+            }, false);
 
-        source.addEventListener('error', function(e){
-          if (e.readystate == EventSource.CLOSED){
-            console.log('Connection was closed!');
-          }  
-        }, false);
-    }   
+            source.addEventListener('error', function(e){
+            if (e.readystate == EventSource.CLOSED){
+                console.log('Connection was closed! Reconecting...');
+
+            }  
+            }, false);
+    } else{
+        console.log("Note supported");
+    }
+  
 </script>
