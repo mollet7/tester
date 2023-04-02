@@ -17,6 +17,7 @@
         var source = new EventSource('stream.php');
             // Result to xhr polling :(
             source.addEventListener('message', function(e){
+
                 console.log(e.data);
             }, false);
 

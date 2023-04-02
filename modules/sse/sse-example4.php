@@ -9,7 +9,7 @@
 </head>
 <body>
     <div id="div1"></div>
-    <div id=""></div>
+    <div id="div2"></div>
 </body>
 </html>
 
@@ -38,15 +38,31 @@ document.body.appendChild(ul)
     ul.appendChild(li);
     li.textContent = "Here are the list";
     document.body.appendChild(ul); */
-// Server sent event here!
 
 
-const evtSource = new EventSource(server2.php)
+    // Server sent event here!
+const evtSource = new EventSource('server2.php')
+const div2 = document.querySelector('#div2');
 
-evtSource.addEventListener('message', function(e){
 
-})
+evtSource.addEventListener('greetings', (e) => {
+    let data = JSON.parse(e.data);
+    console.log(data.id, data.msg);
+},false);
 
+evtSource.addEventListener('name', (e) => {
+    let name = JSON.parse(e.data);
+    //console.log(name.name, name.age);
+    for (const key in name) {
+        console.log(name.name, name.age)
+        const ul = document.createElement('ul');
+        const li = document.createElement('li');
+        ul.appendChild(li);
+        li.textContent = name.name + " : " + name.age;
+        document.body.appendChild(ul);
+    
+    }
+},false);
 
 
 </script>
